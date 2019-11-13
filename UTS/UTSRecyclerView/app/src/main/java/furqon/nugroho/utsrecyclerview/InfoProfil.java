@@ -9,6 +9,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class InfoProfil extends AppCompatActivity {
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +22,8 @@ public class InfoProfil extends AppCompatActivity {
         if (getSupportActionBar()!=null){
             getSupportActionBar().setTitle("Info Profil");
         }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater=getMenuInflater();
