@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="35dp"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    tools:context=".ProfilFragment"
+    android:id="@+id/foto">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/gambar"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:src="@drawable/profil"
+    android:layout_gravity="center_horizontal"/>
+<TextView
+    android:id="@+id/nama"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Furqon Nugroho\nIK-2B\nD3-Teknik Informatika"
+    android:layout_below="@id/foto"/>
+</FrameLayout>
